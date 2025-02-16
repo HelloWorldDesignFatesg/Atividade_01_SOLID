@@ -4,10 +4,11 @@ O código a seguir viola o **Princípio da Segregação de Interface** (Interfac
 
 **Interface Segregation Principle (ISP):
 
-** A interface `Machine` força a implementação de três métodos: `print()`, `scan()` e `fax()`. No entanto, a classe `MultiFunctionPrinter` pode não precisar de todos esses métodos, ou outros tipos de máquinas podem precisar de apenas alguns deles. Isso resulta em uma implementação desnecessária de métodos que não são utilizados pela classe, o que violenta o princípio de que as interfaces devem ser específicas e não sobrecarregar os implementadores com métodos desnecessários. --- 
-## 
+** A interface `Machine` força a implementação de três métodos: `print()`, `scan()` e `fax()`. No entanto, a classe `MultiFunctionPrinter` pode não precisar de todos esses métodos, ou outros tipos de máquinas podem precisar de apenas alguns deles. Isso resulta em uma implementação desnecessária de métodos que não são utilizados pela classe, o que violenta o princípio de que as interfaces devem ser específicas e não sobrecarregar os implementadores com métodos desnecessários.
 
-**Correção** A correção consiste em criar interfaces menores e mais específicas, de forma que as classes implementem apenas os métodos que realmente necessitam. Dessa forma, uma classe que implementa a interface `Machine` poderá escolher apenas os métodos relevantes para sua função. 
+# **Correção:**
+
+A correção consiste em criar interfaces menores e mais específicas, de forma que as classes implementem apenas os métodos que realmente necessitam. Dessa forma, uma classe que implementa a interface `Machine` poderá escolher apenas os métodos relevantes para sua função. 
 
 ```java 
 interface Printer {
