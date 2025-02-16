@@ -1,6 +1,6 @@
 # **EXERCÍCIO 4 ImproperExceptionHandling.java**
 
-** O código a seguir viola dois princípios importantes do SOLID: 
+**O código a seguir viola dois princípios importantes do SOLID:** 
 
 - **Single Responsibility Principle (SRP):** A classe `Calculator` possui duas responsabilidades: 
 

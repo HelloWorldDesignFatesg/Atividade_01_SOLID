@@ -1,10 +1,10 @@
 # **EXERCÍCIO 5 InterfaceSegregationViolation.java** 
 
-O código a seguir viola o **Princípio da Segregação de Interface** (Interface Segregation Principle - ISP), um dos princípios SOLID, pelos seguintes motivos: - 
+O código a seguir viola o **Princípio da Segregação de Interface** (Interface Segregation Principle - ISP), um dos princípios SOLID, pelos seguintes motivos: 
 
-**Interface Segregation Principle (ISP):
+**Interface Segregation Principle (ISP):**
 
-** A interface `Machine` força a implementação de três métodos: `print()`, `scan()` e `fax()`. No entanto, a classe `MultiFunctionPrinter` pode não precisar de todos esses métodos, ou outros tipos de máquinas podem precisar de apenas alguns deles. Isso resulta em uma implementação desnecessária de métodos que não são utilizados pela classe, o que violenta o princípio de que as interfaces devem ser específicas e não sobrecarregar os implementadores com métodos desnecessários.
+* A interface `Machine` força a implementação de três métodos: `print()`, `scan()` e `fax()`. No entanto, a classe `MultiFunctionPrinter` pode não precisar de todos esses métodos, ou outros tipos de máquinas podem precisar de apenas alguns deles. Isso resulta em uma implementação desnecessária de métodos que não são utilizados pela classe, o que violenta o princípio de que as interfaces devem ser específicas e não sobrecarregar os implementadores com métodos desnecessários.
 
 # **Correção:**
 
