@@ -1,6 +1,28 @@
 # **EXERCÍCIO 4 ImproperExceptionHandling.java**
 
-**O código a seguir viola dois princípios importantes do SOLID:** 
+```java 
+
+public class ImproperExceptionHandling {
+    public static void main(String[] args) {
+        Calculator calculator = new Calculator();
+        calculator.divide(10, 0);
+    }
+}
+
+class Calculator {
+    public void divide(int a, int b) {
+        try {
+            System.out.println("Result: " + (a / b));
+        } catch (Exception e) {
+            System.out.println("Something went wrong!");
+        }
+    }
+}
+
+
+```
+
+**O código acima viola dois princípios importantes do SOLID:** 
 
 - **Single Responsibility Principle (SRP):** A classe `Calculator` possui duas responsabilidades: 
 
