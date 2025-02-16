@@ -1,4 +1,4 @@
-# **EXERCÍCIO 4** ## **ImproperExceptionHandling.java
+# **EXERCÍCIO 4 ImproperExceptionHandling.java**
 
 ** O código a seguir viola dois princípios importantes do SOLID: 
 

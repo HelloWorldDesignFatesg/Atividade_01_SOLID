@@ -1,4 +1,4 @@
-# **EXERCÍCIO 5** ## **InterfaceSegregationViolation.java** 
+# **EXERCÍCIO 5 InterfaceSegregationViolation.java** 
 
 O código a seguir viola o **Princípio da Segregação de Interface** (Interface Segregation Principle - ISP), um dos princípios SOLID, pelos seguintes motivos: - 
 
